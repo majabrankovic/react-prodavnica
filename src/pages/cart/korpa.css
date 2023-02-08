@@ -9,7 +9,7 @@
 
   .ukupno, .prazna{
     color: #A0C3D2;
-    font-size: 20px;
+    font-size: 30px;
     padding: 20px;
   }
 
@@ -26,6 +26,8 @@
     color: #F7F5EB;
     transform: scale(1);
     transition: transform 0.3s ease;
+    font-size: 20px;
+    margin: 20px;
   }
 
   .nastavi:hover, .placanje:hover{
@@ -57,6 +59,7 @@
     background: #BA5370;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #F4E2D8, #f3aabf);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #F4E2D8, #f3aabf);
+    padding-bottom: 20px;
   }
 
   .korpaItem {

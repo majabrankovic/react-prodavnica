@@ -35,11 +35,21 @@ export const ProizvodiContextProvider = (props) => {
 
     }
 
+    const resetKorpa = () => {
+        setKorpaItems({});
+      };
+
+    
+
+
     const contextValue ={
         korpaItems, 
         dodajUKorpu, 
         izbrisiIzKorpe,
-        ukupnoZaPlacanje};
+        ukupnoZaPlacanje,
+        resetKorpa,
+        
+    };
     return (
         <ProizvodiContext.Provider value = {contextValue}>{props.children}</ProizvodiContext.Provider>
     )

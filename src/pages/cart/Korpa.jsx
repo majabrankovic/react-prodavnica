@@ -3,12 +3,27 @@ import {PROIZVODI} from "../../proizvodi";
 import { ProizvodiContext } from "../../context/ProizvodiContext";
 import {KorpaItem} from './korpa-item';
 import { useNavigate } from 'react-router-dom';
+import { useState } from "react";
 import "./korpa.css"
 
 export const Cart = () => {
+
+    const [showMessage, setShowMessage] = useState(false);
+
+    const poruka = (event) => {
+        event.preventDefault();
+        setShowMessage(true);
+        alert("Uspesno ste porucili proizvode.");
+        window.location.reload();
+        return false;
+      };
+
     const{korpaItems,ukupnoZaPlacanje}=useContext(ProizvodiContext);
+
     const ukupno = ukupnoZaPlacanje();
+
     const navigate = useNavigate();
+
     return (
     <div className="korpa" >
         <div><h1 className="naslov"> Dodati proizvodi u Vašoj korpi </h1></div>
@@ -21,11 +36,13 @@ export const Cart = () => {
 
         })}
         </div>
-        {ukupno > 0?
+        {ukupno > 0 
+                ?
                 <div className="korpaCheckout" >
                 <p className="ukupno">Ukupno: {ukupno}din</p>
                 <button className = "nastavi" onClick={() => navigate("/")}>Nastavi sa kupovinom</button>
-                <button className="placanje" >Plaćanje</button>
+                <button className="placanje"  onClick={(event) => poruka(event)}>Plaćanje</button>
+                {showMessage}
                 </div>
                 : 
                 <h1 className="prazna">Vaša korpa je prazna.</h1>}
@@ -33,3 +50,4 @@ export const Cart = () => {
 
     )
 }
+
