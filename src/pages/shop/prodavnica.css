@@ -1,14 +1,14 @@
 *{
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
+  font-family: 'Merriweather', serif;
+  font-style: normal;
 }
-
 .shopTitle {
-    margin-top: 100px;
+    margin-top: -40px;
     text-align: center;
     font-size: 30px;
-    color:#A0C3D2;
+    color: #A0C3D2;
   }
+
   .products {
     width: 100%;
     height: auto;
@@ -21,15 +21,88 @@
     border-radius: 15px;
     width: 300px;
     height: 350px;
-    margin: 100px;
+    margin: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
+  .opis{
+    font-family: 'Itim';
+    color: #A0C3D2;
+    font-style: none;
+    font-style: normal;
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .dodajbtn{
+    font-family: 'Itim';
+    color: #F7F5EB;
+    font-style: none;
+    font-style: normal;
+    background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eeb2b9, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eeb2b9, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 15px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    border: #A0C3D2;
+    border-style: double;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    margin-bottom: 40px;
+  }
+
+  .dodajbtn:hover{
+    transform: scale(1.1);
+    color: #A0C3D2;
+  }
+
+  .h1{
+    padding-top: 100px;
+  }
+
+  .razmak{
+    margin-top: 80px;
+    margin-left: 0px;
+    margin-bottom: 88px;
+    border: #A0C3D2;
+    border-style: double;
+    border-radius: 50%/10%;
+    border-width: 5px;
+    padding: 20px;
+    background: #eacda3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffebd1, #f8e9d4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffebd1, #f8e9d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+
+  .shop{
+    background: #BA5370;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F4E2D8, #f3aabf);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F4E2D8, #f3aabf); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+  .cena{
+    font-size: 20px;
+  }
+
   .product img {
-    width: 400px;
+    width: 235px;
+    padding-top: 70px;
   }
 
   .product .opis {

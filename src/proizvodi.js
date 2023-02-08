@@ -1,66 +1,101 @@
-import balenciagaJacket from'./images/balenciaga jacket.jpg'
-import balenciagaJeans from'./images/balenciaga jeans.jpg'
-import gucciBag from'./images/gucci bag.jpg'
-import gucciJacket from'./images/gucci jacket.jpg'
-import superdryShirt from'./images/superdry shirt.jpg'
-import supremeHoodie from'./images/supreme hoodie.png'
-import supremeJacket from'./images/supreme jacket.jpg'
-import zaraDress from'./images/zara dress.jpg'
-import zaraSkirt from'./images/zara skirt.jpg'
+import d from'./images/d.png'
+import d1 from'./images/d1.png'
+import g from'./images/g.png'
+import g1 from'./images/g1.png'
+import gu from'./images/gu.png'
+import gu1 from'./images/gu1.png'
+import gu2 from'./images/gu2.png'
+import lv from'./images/lv.png'
+import lv1 from'./images/lv1.png'
+import lv2 from'./images/lv2.png'
+import mk from'./images/mk.png'
+import mk1 from'./images/mk1.png'
+import mk2 from'./images/mk2.png'
+import p from'./images/p.png'
 
 export const PROIZVODI=[
     {
         id: 1,
-        naziv: "Balenciaga jacket",
-        cena: 100000.00,
-        slika: balenciagaJacket
+        naziv: "Dior tasna roze S",
+        cena: 60000.00,
+        slika: d
     },
     {
         id: 2,
-        naziv: "Balenciaga jeans",
-        cena: 70000.00,
-        slika: balenciagaJeans
+        naziv: "Dior tasna belo-roze L",
+        cena: 90000.00,
+        slika: d1
     },
     {
         id: 3,
-        naziv: "Gucci bag",
+        naziv: "Gucci tasna roze M",
         cena: 150000.00,
-        slika: gucciBag
+        slika: g
     },
     {
         id: 4,
-        naziv: "Gucci jacket",
+        naziv: "Gucci tasna boja koze M",
         cena: 127900.00,
-        slika: gucciJacket
+        slika: g1
     },
     {
         id: 5,
-        naziv: "Superdry shirt",
+        naziv: "Guess tasna bela S",
         cena: 16000.00,
-        slika: superdryShirt
+        slika: gu
     },
     {
         id: 6,
-        naziv: "Supreme hoodie",
+        naziv: "Guess tasna roza M",
         cena: 35000.00,
-        slika: supremeHoodie
+        slika: gu1
     },
     {
         id: 7,
-        naziv: "Supreme jacket",
+        naziv: "Guess tasna tamno siva L",
         cena: 40000.00,
-        slika: supremeJacket
+        slika: gu2
     },
     {
         id: 8,
-        naziv: "Zara dress",
-        cena: 6000.00,
-        slika: zaraDress
+        naziv: "Louis Vuitton tasna bordo S",
+        cena: 90000.00,
+        slika: lv
     },
     {
         id: 9,
-        naziv: "Zara skirt",
-        cena: 7000.00,
-        slika: zaraSkirt
+        naziv: "Louis Vuitton tasna braon S",
+        cena: 100000.00,
+        slika: lv1
+    },
+    {
+        id: 10,
+        naziv: "Louis Vuitton tasna tamno siva M",
+        cena: 150000.00,
+        slika: lv2
+    },
+    {
+        id: 11,
+        naziv: "Michael Kors tasna roza L",
+        cena: 70000.00,
+        slika: mk
+    },
+    {
+        id: 12,
+        naziv: "Michael Kors tasna roza XL",
+        cena: 90000.00,
+        slika: mk1
+    },
+    {
+        id: 13,
+        naziv: "Michael Kors tasna roza XL",
+        cena: 100000.00,
+        slika: mk2
+    },
+    {
+        id: 14,
+        naziv: "Prada tasna tasna svetlo braon L",
+        cena: 150000.00,
+        slika: p
     }
 ]
