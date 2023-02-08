@@ -5,8 +5,9 @@ import "./navbar.css";
 export const Navbar = () => {
     return <div className="navbar">
         <div className="Links">
-<Link to ="/"> Prodavnica </Link>
-<Link to="/cart"><ShoppingCartIcon /> </Link>
+            <Link to ="/"> Prodavnica </Link>
+            <Link to="/cart"><ShoppingCartIcon /> </Link>
+            <Link to='/kontakt'>Kontakt</Link>
         </div>
     </div>;
 };
