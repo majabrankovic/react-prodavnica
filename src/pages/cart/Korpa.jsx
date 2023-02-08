@@ -10,7 +10,7 @@ export const Cart = () => {
     const ukupno = ukupnoZaPlacanje();
     const navigate = useNavigate();
     return (
-        <div className="korpa">
+    <div className="korpa" >
         <div><h1 className="naslov"> Dodati proizvodi u Vašoj korpi </h1></div>
 
         <div className="korpaItems">
@@ -22,13 +22,14 @@ export const Cart = () => {
         })}
         </div>
         {ukupno > 0?
-                <div className="korpaCheckout">
-                <p>Ukupno: {ukupno}din</p>
-                <button onClick={() => navigate("/")}>Nastavi sa kupovinom</button>
-                <button>Plaćanje</button>
+                <div className="korpaCheckout" >
+                <p className="ukupno">Ukupno: {ukupno}din</p>
+                <button className = "nastavi" onClick={() => navigate("/")}>Nastavi sa kupovinom</button>
+                <button className="placanje" >Plaćanje</button>
                 </div>
                 : 
-                <h1>Vaša korpa je prazna.</h1>}
-        </div>
+                <h1 className="prazna">Vaša korpa je prazna.</h1>}
+    </div>
+
     )
 }

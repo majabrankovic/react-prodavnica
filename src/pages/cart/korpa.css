@@ -1,8 +1,38 @@
+
+
 .cart {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .ukupno, .prazna{
+    color: #A0C3D2;
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .nastavi, .placanje{
+    background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eeb2b9, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eeb2b9, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px;
+    padding-top: 5px;
+    margin: 5px;
+    border-color: #A0C3D2;
+    border-radius: 15px;
+    border-style: double;
+    color: #F7F5EB;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+  }
+
+  .nastavi:hover, .placanje:hover{
+    color:#A0C3D2;
+    transform: scale(1.1);
+    cursor: pointer;
+
   }
 
   .korpa{
@@ -19,8 +49,14 @@
       width: 100%;
       padding-bottom: 100px;
       padding-top: 50px;
-      padding-left: 72px;
+      padding-left: 0px;
     
+  }
+
+  .korpaCheckout{
+    background: #BA5370;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F4E2D8, #f3aabf);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F4E2D8, #f3aabf);
   }
 
   .korpaItem {
@@ -96,15 +132,4 @@
     font-weight: bold;
     text-align: center;
     padding: 5px;
-  }
-
-  .checkout button {
-    width: 150px;
-    height: 50px;
-    background-color: rgb(19, 19, 19);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    margin: 10px;
-    cursor: pointer;
   }

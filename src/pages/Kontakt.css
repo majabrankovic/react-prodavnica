@@ -1,10 +1,14 @@
 .kontakt {
+    font-family: 'Itim';
     width: 100%;
     height: 90vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background: #BA5370;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F4E2D8, #f3aabf);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F4E2D8, #f3aabf); 
 }
 
 .kontaktLeftColumn {
@@ -31,7 +35,7 @@
     font-weight: 10;
     font-size: 30px;
     margin-left: 30px;
-    color: #50808E;
+    color: #A0C3D2;
 }
 
 form {
@@ -46,9 +50,12 @@ form input {
     height: 40px;
     width: 100%;
     border: none;
-    border-bottom: 1px solid #121619;
-    color: black;
+    border-bottom: 1px solid #A0C3D2;
+    color: #A0C3D2;
     margin-bottom: 30px;
+    background: #eacda3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffebd1, #f8e9d4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffebd1, #f8e9d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 form textarea {
@@ -56,26 +63,38 @@ form textarea {
     height: 70px;
     width: 100%;
     border: none;
-    border-bottom: 1px solid #121619;
-    color: black;
+    border-bottom: 1px solid #A0C3D2;
+    color: #A0C3D2;
+    background: #eacda3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffebd1, #f8e9d4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffebd1, #f8e9d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 input::placeholder,
 textarea::placeholder {
     font-weight: bold;
-    color: gray;
+    color: #A0C3D2;
+    font-size: 15px;
     font-weight: normal;
     font-family: Arial, Helvetica, sans-serif;
+    background: #eacda3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffebd1, #f8e9d4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffebd1, #f8e9d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 form input:focus,
 textarea:focus {
     outline: none;
+    font-weight: bold;
+    color: #A0C3D2;
+    font-size: 15px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 form label {
     margin-top: 15px;
-    color: #50808E;
+    color: #A0C3D2;
     font-weight: bold;
     font-size: 17px;
 }
@@ -85,9 +104,20 @@ form button {
     width: 140px;
     height: 40px;
     border: none;
-    background-color: #50808E;
+    background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eeb2b9, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eeb2b9, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 5px;
+    border-color: #A0C3D2;
     color: whitesmoke;
     font-size: 15px;
     cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    border-style: double;
+}
+
+form button:hover{
+    transform: scale(1.1);
+    color: #A0C3D2;
 }
