@@ -18,7 +18,7 @@ function Footer() {
             <TwitterIcon />
           </a>
           </div>
-          <p> &copy; 2023 Handbag Heaven </p>
+          <p> &copy; 2023 Handbag Heaven <br></br>Broj telefona: +381 657890345 </p>
     </div>
   )
 }
